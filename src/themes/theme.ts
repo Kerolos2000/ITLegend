@@ -29,8 +29,8 @@ export const lightTheme: ThemeOptions = {
 		secondary: {
 			contrastText: '#000000',
 			dark: '#9CA3AF',
-			light: '#E5E7EB',
-			main: '#F3F4F6',
+			light: '#c1c5ce',
+			main: '#808080',
 		},
 		success: {
 			contrastText: '#FFFFFF',
@@ -47,7 +47,7 @@ export const lightTheme: ThemeOptions = {
 		},
 	},
 	shape: {
-		borderRadius: 10,
+		borderRadius: 8,
 	},
 	typography: {
 		allVariants: {

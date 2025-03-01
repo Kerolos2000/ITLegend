@@ -2,6 +2,8 @@ import { Grid2, Typography } from '@mui/material';
 import React from 'react';
 import { Section } from 'src/components';
 
+import { HomeVideoSection } from './HomeVideoSection';
+
 export interface HomeLayoutProps {}
 
 export const HomeLayout: React.FC<HomeLayoutProps> = () => {
@@ -15,7 +17,7 @@ export const HomeLayout: React.FC<HomeLayoutProps> = () => {
 					size={{ md: 6, xs: 12 }}
 					sx={{ order: { md: 1, xs: 1 } }}
 				>
-					<Typography variant='h5'>Section 2</Typography>
+					<HomeVideoSection />
 				</Grid2>
 
 				<Grid2
