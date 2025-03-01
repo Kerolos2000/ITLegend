@@ -4,11 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "build": "tsc -b && vite build",
     "commit": "git-cz",
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "format": "prettier --write ./src",
+    "lint": "eslint --fix ./src",
+    "preview": "vite preview",
+    "tsc": "tsc --noEmit"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -23,14 +25,19 @@
     "@eslint/js": "^9.21.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
+    "@typescript-eslint/eslint-plugin": "^8.24.1",
     "@vitejs/plugin-react-swc": "^3.8.0",
-    "eslint": "^9.21.0",
+    "eslint-plugin-perfectionist": "4.9.0",
+    "eslint-plugin-react-compiler": "^19.0.0-beta-21e868a-20250216",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-sonarjs": "^3.0.2",
+    "eslint": "^9.21.0",
     "git-cz": "^4.9.0",
-    "globals": "^15.15.0",
+    "globals": "^16.0.0",
     "typescript": "~5.7.2",
-    "typescript-eslint": "^8.24.1",
+    "prettier": "^3.5.1",
     "vite": "^6.2.0"
   }
 }
