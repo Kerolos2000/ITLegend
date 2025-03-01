@@ -3,16 +3,24 @@ import React, { PropsWithChildren } from 'react';
 
 export interface SectionProps extends BoxProps {
 	id: string;
+	subSection?: boolean;
 }
 
 export const Section: React.FC<PropsWithChildren<SectionProps>> = props => {
-	const { children, id, sx, ...rest } = props;
+	const { children, id, subSection, sx, ...rest } = props;
 
 	return (
 		<Box
 			component='section'
 			id={id}
-			sx={{ px: { md: 4, xs: 2 }, py: 3, ...sx }}
+			sx={{
+				display: 'flex',
+				flexDirection: 'column',
+				gap: 2,
+				px: subSection ? 0 : { md: 4, xs: 2 },
+				py: subSection ? 0 : 3,
+				...sx,
+			}}
 			{...rest}
 		>
 			{children}
