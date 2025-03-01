@@ -4,8 +4,8 @@ import { ThemeOptions } from '@mui/material';
 export const lightTheme: ThemeOptions = {
 	palette: {
 		background: {
-			default: '#f5f9fa',
-			paper: '#FFFFFF',
+			default: '#FFFFFF',
+			paper: '#f5f9fa',
 		},
 		common: {
 			black: '#1E293B',
