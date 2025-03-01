@@ -2,7 +2,6 @@ import eslint from '@typescript-eslint/eslint-plugin';
 import perfectionist from 'eslint-plugin-perfectionist';
 import pluginReact from 'eslint-plugin-react';
 import reactCompiler from 'eslint-plugin-react-compiler';
-import reactHooks from 'eslint-plugin-react-hooks';
 import pluginReactRefresh from 'eslint-plugin-react-refresh';
 import sonarjs from 'eslint-plugin-sonarjs';
 import globals from 'globals';
@@ -21,12 +20,9 @@ export default [
 			perfectionist,
 			pluginReactRefresh,
 			reactCompiler,
-			reactHooks,
 			sonarjs,
 		},
 		rules: {
-			'react-hooks/exhaustive-deps': 'warn',
-			'react-hooks/rules-of-hooks': 'error',
 			'@typescript-eslint/ban-ts-comment': 'off',
 			'@typescript-eslint/no-empty-interface': 'off',
 			'@typescript-eslint/no-empty-object-type': 'off',
