@@ -1,54 +1,87 @@
-# React + TypeScript + Vite
+# ITLegend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📦 Installation
 
-Currently, two official plugins are available:
+Install all project dependencies by running:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```sh
+yarn
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Development Mode
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+Start the application in development mode with hot reloading:
+
+```sh
+yarn dev
+```
+
+This will run **Vite** and watch for file changes.
+
+---
+
+## 🛠️ Linting & Formatting
+
+### 🔍 Lint Code
+
+Check the code for ESLint rule violations and automatically fix them:
+
+```sh
+yarn lint
+```
+
+### 🎨 Format Code
+
+Format the code using **Prettier**:
+
+```sh
+yarn format
+```
+
+---
+
+## 📜 Type Checking
+
+Check TypeScript types without emitting files:
+
+```sh
+yarn tsc
+```
+
+This helps catch type-related errors early in development.
+
+---
+
+## 📸 Production Build
+
+Generate a production-ready build of the application:
+
+```sh
+yarn build
+```
+
+This command first compiles TypeScript (`tsc -b`) and then builds the project using **Vite**.
+
+---
+
+## 👀 Preview Production Build
+
+After building, preview the production version locally:
+
+```sh
+yarn preview
+```
+
+This allows testing of the production build in a local environment.
+
+---
+
+## 💬 Commit Management
+
+Use **Git-CZ** to create structured commits following conventional commit standards:
+
+```sh
+yarn commit
 ```
