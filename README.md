@@ -1,4 +1,4 @@
-# ITLegend
+# ITLegend for test ui grid
 
 ## 📦 Installation
 
